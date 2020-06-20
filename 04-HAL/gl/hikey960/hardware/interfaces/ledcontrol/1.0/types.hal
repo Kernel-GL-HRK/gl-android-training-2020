@@ -1,0 +1,6 @@
+package vendor.gl.hardware.ledcontrol@1.0;
+
+enum Result : uint32_t {
+    OK = 0,
+    ERROR = 1,
+};
