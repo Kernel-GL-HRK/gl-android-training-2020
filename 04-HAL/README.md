@@ -1,3 +1,9 @@
+# Project dependencies
+Android manifest: https://github.com/kurtwalkir/android_manifest
+Hikey Linaro Device: https://github.com/kurtwalkir/hikey-linaro-device
+Hikey Linaro Kernel: https://github.com/kurtwalkir/hikey-linaro-kernel
+HAL/App/Service: https://github.com/kurtwalkir/gl-android-training-2020
+
 
 # Description:
 A simple project for controlling the hikey 960 LEDs.
@@ -12,17 +18,12 @@ Implemented:
 
 <details>
   <summary>Manual:</summary>
-1. Clone these changes to the hikey vendor folder.<br/>
-2. Add:<br/>
-$(call inherit-product-if-exists, vendor/gl/hikey960/device-vendor.mk)<br/>
-to file:<br/>
-/hikey960/device/linaro/hikey/hikey960/device-hikey960.mk<br/>
-
-3. Setup the build environment (if it is not done yet):<br/>
+1. Clone all repo in your project folder.<br/>
+2. Setup the build environment (if it is not done yet):<br/>
 . ./build/envsetup.sh<br/>
 lunch hikey960-userdebug<br/>
 
-4. Run the build:<br/>
+3. Run the build:<br/>
 make -j8<br/>
 
 
