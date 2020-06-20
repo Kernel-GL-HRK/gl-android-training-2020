@@ -1,0 +1,2 @@
+allow platform_app hal_ledctrl_hwservice:hwservice_manager { find };
+allow platform_app hal_ledctrl_default:binder { call };
