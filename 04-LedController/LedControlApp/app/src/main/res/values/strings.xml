@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LedControlApp</string>
+    <string name="led_1">Led_1</string>
+    <string name="led_2">Led_2</string>
+    <string name="led_3">Led_3</string>
+    <string name="led_4">Led_4</string>
+</resources>
