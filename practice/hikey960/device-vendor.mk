@@ -9,5 +9,8 @@ DEVICE_MANIFEST_FILE += \
 DEVICE_MATRIX_FILE += \
 	vendor/gl/hikey960/hardware/interfaces/compatibility_matrix.xml
 
+TARGET_FS_CONFIG_GEN += \
+	vendor/gl/hikey960/hardware/interfaces/config.fs
+
 BOARD_SEPOLICY_DIRS += \
 	vendor/gl/hikey960/sepolicy
