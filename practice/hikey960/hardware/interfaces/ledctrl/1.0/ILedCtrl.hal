@@ -1,0 +1,6 @@
+package vendor.gl.hardware.ledctrl@1.0;
+
+interface ILedCtrl {
+
+    setLED(int32_t led, int32_t state) generates (int32_t result);    
+};

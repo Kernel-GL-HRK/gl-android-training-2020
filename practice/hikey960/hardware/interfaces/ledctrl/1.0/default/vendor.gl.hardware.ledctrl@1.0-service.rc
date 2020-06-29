@@ -1,0 +1,18 @@
+
+service vendor.gl.hardware.ledctrl-1-0 /vendor/bin/hw/vendor.gl.hardware.ledctrl@1.0-service
+    interface vendor.gl.hardware.ledctrl@1.0::ILedCtrl default
+    class hal
+    user vendor_ledctrl
+    group vendor_ledctrl
+    oneshot
+    disabled
+
+on early-boot
+    chown vendor_ledctrl vendor_ledctrl /sys/class/leds/user_led1/brightness
+    chown vendor_ledctrl vendor_ledctrl /sys/class/leds/user_led1/trigger
+    chown vendor_ledctrl vendor_ledctrl /sys/class/leds/user_led2/brightness
+    chown vendor_ledctrl vendor_ledctrl /sys/class/leds/user_led2/trigger
+    chown vendor_ledctrl vendor_ledctrl /sys/class/leds/user_led3/brightness
+    chown vendor_ledctrl vendor_ledctrl /sys/class/leds/user_led3/trigger
+    chown vendor_ledctrl vendor_ledctrl /sys/class/leds/user_led4/brightness
+    chown vendor_ledctrl vendor_ledctrl /sys/class/leds/user_led4/trigger
