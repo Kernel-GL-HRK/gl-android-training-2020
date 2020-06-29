@@ -6,4 +6,4 @@ allow hal_ledctrl_default hidl_base_hwservice:hwservice_manager { add };
 allow hal_ledctrl_default hal_ledctrl_hwservice:hwservice_manager { add };
 
 allow hal_ledctrl_default sysfs_leds:dir { search };
-allow hal_ledctrl_default sysfs:file { open write getattr };
+allow hal_ledctrl_default sysfs:file { rw_file_perms };
