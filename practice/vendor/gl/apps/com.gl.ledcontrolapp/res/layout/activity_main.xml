@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Controll LEDs at Hikey960 board"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_led"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fadeScrollbars="true"
+        android:fadingEdge="horizontal|vertical"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Header"
+        app:layout_constraintStart_toStartOf="@+id/textView_Header"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Header" />
+
+    <Spinner
+        android:id="@+id/spinner_trigger"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="@+id/spinner_led"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_led" />
+
+    <EditText
+        android:id="@+id/editTextNumber_brightness"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="@+id/spinner_trigger"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_trigger" />
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autoSizeTextType="none"
+        android:text="connecting to the service"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Header"
+        app:layout_constraintStart_toStartOf="@+id/textView_Header"
+        app:layout_constraintTop_toBottomOf="@+id/textView_max_brightness" />
+
+    <TextView
+        android:id="@+id/textView_curLED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LED:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_led"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_led"
+        app:layout_constraintTop_toTopOf="@+id/spinner_led" />
+
+    <TextView
+        android:id="@+id/textView_curTrigger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="trigger:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_trigger"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_trigger"
+        app:layout_constraintTop_toTopOf="@+id/spinner_trigger" />
+
+    <TextView
+        android:id="@+id/textView_max_brightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="maximum brightness is unknown"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Header"
+        app:layout_constraintStart_toStartOf="@+id/textView_Header"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_brightness" />
+
+    <TextView
+        android:id="@+id/textView_brightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="brightness:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber_brightness"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber_brightness"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumber_brightness" />
+
+    <Button
+        android:id="@+id/button_set_brightness"
+        android:layout_width="49dp"
+        android:layout_height="36dp"
+        android:text="set"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber_brightness"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_trigger"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumber_brightness" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+
+package vendor.gl.hardware.led@1.0;
+
+/// interface for controlling LEDs at hikey960 board
+interface ILEDControl 
+{
+	///returns list of LEDs divided by space. The order of LEDs is important. 
+	get_leds_list		()						generates (string r);
+
+	///returns content of trigger-file for given LED. 
+	get_trigger			(int32_t led_number)	generates (string r);
+
+	///returns content of max_brightness-file for given LED. 
+	get_max_brightness	(int32_t led_number)	generates (string r);
+
+	///returns content of brightness-file for given LED. 
+	get_brightness		(int32_t led_number)	generates (string r);
+	
+	///writes value-string to trigger-file of given LED. Returns content of the file.
+	set_trigger			(int32_t led_number, string value)	generates (string r);
+
+	///writes value-string to brightness-file of given LED. Returns content of the file.
+	set_brightness		(int32_t led_number, string value)	generates (string r);
+};

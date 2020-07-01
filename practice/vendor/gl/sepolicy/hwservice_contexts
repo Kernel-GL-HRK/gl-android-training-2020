@@ -1,0 +1,1 @@
+vendor.gl.hardware.led::ILEDControl u:object_r:hal_led_hwservice:s0

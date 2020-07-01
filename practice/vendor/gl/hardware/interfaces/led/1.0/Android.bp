@@ -1,0 +1,12 @@
+hidl_interface {
+	name: "vendor.gl.hardware.led@1.0",
+	root: "vendor.gl.hardware",
+	srcs: [
+		"ILEDControl.hal",
+	],
+	interfaces: [
+		"android.hidl.base@1.0",
+	],
+	gen_java: true,
+	gen_java_constants: true,
+}

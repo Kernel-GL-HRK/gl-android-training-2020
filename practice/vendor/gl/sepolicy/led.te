@@ -1,0 +1,9 @@
+type hal_led_default, domain, halserverdomain;
+
+init_daemon_domain(hal_led_default)
+
+allow hal_led_default hidl_base_hwservice:hwservice_manager { add };
+allow hal_led_default hal_led_hwservice:hwservice_manager { add };
+
+allow hal_led_default sysfs_leds:dir { open search read };
+allow hal_led_default sysfs:file { rw_file_perms };
