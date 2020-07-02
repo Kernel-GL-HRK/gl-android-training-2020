@@ -1,0 +1,30 @@
+
+package vendor.gl.hikey960.hardware.leds@1.0;
+
+/**
+ * ILedControl is an interface that can manage leds
+ */
+interface ILedControl {
+    /**
+     * Set custom led settings, triggers to none state, brightnesses to 0
+     */
+    setCustomLedSettings();
+    /**
+     * Update led state
+     *
+     * @return result true if successful, false otherwise.
+     */
+     updateState(string ledType, bool turnOn) generates (bool result);
+
+    /**
+     * Get led state
+     *
+     * @return state true if led is ON, false otherwise.
+     */
+     getLedState(string ledType) generates (bool state);
+    /**
+     * Set default led settings: triggers for user leds = heartbeat, trigger for bt = hci0rx, trigger for wifi = phy0tx, brightnesses = 0
+     */
+     setDefaultLedSettings();
+};
+

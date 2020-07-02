@@ -1,0 +1,2 @@
+vendor.gl.hikey960.hardware.leds::ILedControl u:object_r:hal_leds_hwservice:s0
+

@@ -1,0 +1,12 @@
+hidl_interface {
+	name: "vendor.gl.hikey960.hardware.leds@1.0",
+	root: "vendor.gl.hikey960.hardware",
+	srcs: [
+		"ILedControl.hal",
+	],
+	interfaces: [
+		"android.hidl.base@1.0",
+	],
+	gen_java:true,
+	gen_java_constants: true,
+}

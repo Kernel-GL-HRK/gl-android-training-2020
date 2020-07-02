@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/checkBoxBTLed"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="BT Active LED"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxLed1"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabel" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLed4"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="User LED 4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxLed3" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLed3"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="User LED 3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxLed2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxWifiLed"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="WIFI Active LED"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxLed2"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxBTLed" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLed1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="User LED 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabel" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLed2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="User LED 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxLed1" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="72dp"
+        android:text="UPDATE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxLed4" />
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="State of LEDS on the hikey960  board:"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="168dp"
+        android:text="REFRESH"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxWifiLed" />
+
+</android.support.constraint.ConstraintLayout>

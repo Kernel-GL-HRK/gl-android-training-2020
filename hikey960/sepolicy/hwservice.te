@@ -1,0 +1,2 @@
+type hal_leds_hwservice, hwservice_manager_type;
+

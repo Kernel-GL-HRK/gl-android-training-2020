@@ -1,0 +1,2 @@
+rootProject.name='LedControlApplication'
+include ':app'
