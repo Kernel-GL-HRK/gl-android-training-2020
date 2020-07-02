@@ -1,0 +1,13 @@
+package vendor.gl.hardware.ledcontrol@1.0;
+
+enum LedState : uint32_t {
+	LED_OFF = 0,
+	LED_ON,
+};
+
+enum LedNum : uint32_t {
+	LED_1 = 1,
+	LED_2,
+	LED_3,
+	LED_4,
+};

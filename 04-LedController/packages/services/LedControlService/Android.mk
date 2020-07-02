@@ -16,8 +16,8 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/app/src/main/res
 LOCAL_STATIC_ANDROID_LIBRARIES := \
 	android-support-v7-appcompat 
 
-#LOCAL_STATIC_JAVA_LIBRARIes += \
-#	vendor.gl.hardware.ledcontrol-V1.0-java
+LOCAL_STATIC_JAVA_LIBRARIes += \
+	vendor.gl.hardware.ledcontrol-V1.0-java
 
 include $(BUILD_PACKAGE)
 
